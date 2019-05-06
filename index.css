@@ -1,6 +1,16 @@
 
+body {
+    max-width: 640px;
+    margin: auto;
+}
+
+h1, p {
+    text-align: center;
+}
+
 table {
     border-collapse: collapse;
+    margin: auto;
 }
 
 td {
