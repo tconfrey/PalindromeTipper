@@ -31,6 +31,8 @@ function addSolutionColumn() {
 
 function _calculate() {
     var local = 0;
+    var step = (tip < 10) ? 1 : ((tip < 50) ? 7 : 27); // speed up as we go
+    
     while (!done()) {
         tip += 0.01;
         $("#tip").text(tip.toFixed(2));
@@ -39,8 +41,7 @@ function _calculate() {
             console.log("Solution: Tip = ", tip.toFixed(2), " , total = ", total.toFixed(2));
             addSolutionColumn();
         }
-        if (local++ > 7) {
-            // run a few times before ceeding back to display
+        if (local++ > step) {             // run a few times before ceeding back to display
             setTimeout(_calculate, 4);
             return; 
         }
