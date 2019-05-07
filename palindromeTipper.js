@@ -54,7 +54,14 @@ function _calculate() {
 }
 
 function calculate() {
-    cost = parseFloat($("#cost").val());
+    var entry = $("#cost").val();
+    if (! entry.match(/^\$?[\d,]+(\.\d*)?$/)) {
+        alert("Valid money amounts only"); return;
+    }
+    if (entry.match(/^\$/)) {    // peel off any $ signs
+        entry = entry.substring(1);
+    }
+    cost = parseFloat(entry);
 
     // For repeated use its easiest just to create the table on demand
     $("#tbl").html("<table><tr> <td> Cost: </td><td id='topline'>" + cost.toFixed(2) + "</td></tr>" +
