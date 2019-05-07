@@ -25,7 +25,7 @@ function addSolutionColumn() {
     $("#tip").before($(newtip));
     var newtotal = "<td>" + total.toFixed(2) + "</td>";
     $("#total").before($(newtotal));
-    var newtopline = "<td>" + cost + "</td>";
+    var newtopline = "<td>" + cost.toFixed(2) + "</td>";
     $("#topline").before($(newtopline));
 }
 
@@ -57,7 +57,7 @@ function calculate() {
     cost = parseFloat($("#cost").val());
 
     // For repeated use its easiest just to create the table on demand
-    $("#tbl").html("<table><tr> <td> Cost: </td><td id='topline'>" + cost + "</td></tr>" +
+    $("#tbl").html("<table><tr> <td> Cost: </td><td id='topline'>" + cost.toFixed(2) + "</td></tr>" +
                    "<tr> <td> Tip: </td><td id ='tip'/> </tr>" +
                    "<tr> <td> Total: </td><td id='total'>Calculating...</td></tr></table>");
     tip = 0;
