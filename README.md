@@ -3,3 +3,6 @@ Solver for the Palindrome tip problem (make the tip and total palindromic number
 
 5/6/19
 This is the MVP version. I'm using it to get my dev environment set up and to work with github. See the hosted github page to see it work: (https://tconfrey.github.io/PalindromeTipper/) .
+
+5/7
+Now also available at http://fun-tipper.com - Pin it to your homepage!
