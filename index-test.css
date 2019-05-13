@@ -1,8 +1,8 @@
 
 body {
-    max-width: 70%;
+
     margin: auto;
-    border: solid red 2px;    
+    border: solid green 2px;    
 }
 
 h1, p {
