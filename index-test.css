@@ -1,0 +1,25 @@
+
+body {
+    max-width: 80%;
+    margin: auto;
+    border: solid lightgray 1px;    
+}
+
+h1, p {
+    text-align: center;
+}
+
+table {
+    border-collapse: collapse;
+    margin: auto;
+}
+
+td {
+    padding: 10px;
+    text-align: right;
+    border: solid lightgray 1px;
+}
+
+#inputbox {
+    zoom: 2.0;
+}
